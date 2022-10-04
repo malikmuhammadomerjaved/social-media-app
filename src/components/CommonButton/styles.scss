@@ -1,0 +1,24 @@
+@import "../../styles/commons.scss";
+
+.common-button-wrapper {
+  .common-button {
+    @include flexView(center, center);
+
+    background: linear-gradient(90deg, $gradient-from 3.25%, $gradient-to 100%);
+    width: 100%;
+    border-radius: 1rem;
+    border: none;
+    color: $white-color;
+    font-size: 1.6rem;
+    padding: 1.5rem 0;
+    cursor: pointer;
+
+    @media (min-width: $mobile-screen) {
+      font-size: 2rem;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

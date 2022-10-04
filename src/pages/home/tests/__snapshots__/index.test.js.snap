@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> should match Home component to snapshot 1`] = `
+<div>
+  <main
+    class="home-main-container"
+  >
+    <figure
+      class="landing-page-image-container"
+    >
+      <img
+        alt="Events"
+        class="main-image"
+        src="/images/landing-page/event-image.png"
+      />
+    </figure>
+    <article
+      class="home-content-wrapper"
+    >
+      <article
+        class="main-heading-wrapper"
+      >
+        <h1
+          class="plain-heading"
+        >
+          Imagine if
+        </h1>
+        <h1
+          class="plain-heading gradient"
+        >
+          Snapchat
+        </h1>
+        <h1
+          class="plain-heading"
+        >
+          had events.
+        </h1>
+      </article>
+      <h2
+        class="main-subheading"
+      >
+        Easily host and share events with your friends across any social media.
+      </h2>
+    </article>
+    <article
+      class="common-button-wrapper"
+    >
+      <button
+        class="common-button"
+      >
+        🎉 Create my event
+      </button>
+    </article>
+  </main>
+</div>
+`;

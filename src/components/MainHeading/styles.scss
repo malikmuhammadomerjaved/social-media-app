@@ -1,0 +1,24 @@
+@import "../../styles/commons.scss";
+
+.main-heading-wrapper {
+  @include flexView(center, unset, column);
+
+  @media (min-width: $tablet-screen) {
+    @include flexView(flex-end, unset, column);
+  }
+
+  .plain-heading {
+    font-weight: 700;
+    color: $primary-color;
+
+    &.gradient {
+      background: -webkit-linear-gradient(
+        90deg,
+        $gradient-from 24.2%,
+        $gradient-to 120.46%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

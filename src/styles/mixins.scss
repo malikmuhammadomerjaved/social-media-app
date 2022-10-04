@@ -1,0 +1,20 @@
+@mixin flexView($align: flex-start, $justify: flex-start, $direction: row) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+@mixin gridView($col: 1fr, $col-gap: 0, $row-gap: 0, $row: 1fr) {
+  display: grid;
+  grid-template-columns: $col;
+  column-gap: $col-gap;
+  row-gap: $row-gap;
+  grid-template-rows: $row;
+}
+
+@mixin boxShadow($value) {
+  -webkit-box-shadow: $value;
+  -moz-box-shadow: $value;
+  box-shadow: $value;
+}

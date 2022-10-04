@@ -1,0 +1,72 @@
+@import "../../styles/commons.scss";
+
+.home-main-container {
+  @include gridView(1fr, 0, 3.5rem);
+  @extend .max-container;
+
+  grid-template-areas:
+    "heading"
+    "image"
+    "button";
+  align-items: center;
+
+  @media (min-width: $mobile-screen) {
+    @include gridView(1fr, 0, 5rem);
+  }
+
+  @media (min-width: $tablet-screen) {
+    @include gridView(1fr 1fr, 16rem, 5rem, 1.8fr 1fr);
+
+    grid-template-areas:
+      "image heading"
+      "image button";
+    align-items: center;
+  }
+
+  .landing-page-image-container {
+    grid-area: image;
+    justify-self: center;
+
+    max-width: 44rem;
+    width: 100%;
+
+    .main-image {
+      width: 100%;
+    }
+  }
+
+  .home-content-wrapper {
+    grid-area: heading;
+    align-self: flex-end;
+
+    .main-subheading {
+      font-weight: 300;
+      text-align: center;
+      color: $dark-text;
+      max-width: 52rem;
+      margin: 1.5rem auto 0;
+
+      @media (min-width: $tablet-screen) {
+        text-align: right;
+      }
+    }
+  }
+
+  .common-button-wrapper {
+    grid-area: button;
+
+    max-width: 19rem;
+    width: 100%;
+    justify-self: center;
+
+    @media (min-width: $mobile-screen) {
+      max-width: 32rem;
+    }
+
+    @media (min-width: $tablet-screen) {
+      align-self: flex-start;
+      justify-self: flex-end;
+      max-width: 32rem;
+    }
+  }
+}
