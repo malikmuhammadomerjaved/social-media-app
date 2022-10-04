@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MainHeading /> should match MainHeading component to snapshot 1`] = `
+<div>
+  <article
+    class="main-heading-wrapper"
+  >
+    <h1
+      class="plain-heading"
+    >
+      Imagine if
+    </h1>
+    <h1
+      class="plain-heading gradient"
+    >
+      Snapchat
+    </h1>
+    <h1
+      class="plain-heading"
+    >
+      had events.
+    </h1>
+  </article>
+</div>
+`;

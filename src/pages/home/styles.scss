@@ -4,6 +4,13 @@
   @include gridView(1fr, 0, 3.5rem);
   @extend .max-container;
 
+  background: linear-gradient(
+      0deg,
+      $primary-background-1,
+      $primary-background-1
+    ),
+    $primary-background-2;
+
   grid-template-areas:
     "heading"
     "image"

@@ -1,15 +1,15 @@
 import { render } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
-import Home from "../index";
+import CommonButton from "../CommonButton";
 
-describe("<Home />", () => {
+describe("<CommonButton />", () => {
   const { container } = render(
     <BrowserRouter>
-      <Home />
+      <CommonButton />
     </BrowserRouter>
   );
 
-  it("should match Home component to snapshot", () => {
+  it("should match CommonButton component to snapshot", () => {
     expect(container).toMatchSnapshot();
   });
 });

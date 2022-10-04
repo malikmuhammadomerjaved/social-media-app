@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./styles.scss";
 
 const CommonButton = (props) => {
@@ -5,7 +7,9 @@ const CommonButton = (props) => {
 
   return (
     <article className="common-button-wrapper">
-      <button className="common-button">{label}</button>
+      <Link to="/event">
+        <button className="common-button">{label}</button>
+      </Link>
     </article>
   );
 };

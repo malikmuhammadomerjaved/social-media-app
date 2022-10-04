@@ -1,1 +1,53 @@
 @import "../../styles/commons.scss";
+
+.event-page-container {
+  background-color: $primary-background-2;
+  height: 100vh;
+
+  .events-layout-container {
+    @include flexView(center);
+
+    @media (min-width: $mobile-screen) {
+      height: 100%;
+
+      grid-template-areas: "events image";
+    }
+
+    .events-inner-wrapper {
+      @include gridView(1fr, 0, 1rem);
+      @extend .event-container-width;
+
+      height: max-content;
+
+      grid-template-areas:
+        "image"
+        "events";
+
+      @media (min-width: $mobile-screen) {
+        @include gridView(1fr, 0, 3.5rem);
+      }
+
+      @media (min-width: $tablet-screen) {
+        @include gridView(1fr 1fr, 9rem);
+
+        grid-template-areas: "events image";
+      }
+
+      .event-image-container {
+        width: 100%;
+
+        .main-image {
+          width: 100%;
+        }
+      }
+
+      .event-detail-container {
+        grid-area: events;
+      }
+
+      .event-image-container {
+        grid-area: image;
+      }
+    }
+  }
+}

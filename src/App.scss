@@ -11,13 +11,6 @@ html {
   }
 
   body {
-    background: linear-gradient(
-        0deg,
-        $primary-background-1,
-        $primary-background-1
-      ),
-      $primary-background-2;
-
     h1 {
       font-size: 3.6rem;
 
@@ -28,6 +21,15 @@ html {
     }
 
     h2 {
+      font-size: 2.8rem;
+      font-weight: 700;
+
+      @media (min-width: $mobile-screen) {
+        font-size: 4.8rem;
+      }
+    }
+
+    h3 {
       font-size: 1.6rem;
 
       @media (min-width: $mobile-screen) {
@@ -36,8 +38,26 @@ html {
       }
     }
 
-    h3 {
-      font-size: 2rem;
+    h6 {
+      font-size: 1.6rem;
+      font-size: 700;
+
+      @media (min-width: $mobile-screen) {
+        font-size: 1.8rem;
+      }
+    }
+
+    p {
+      font-size: 1.4rem;
+      font-weight: 400;
+
+      @media (min-width: $mobile-screen) {
+        font-size: 1.8rem;
+      }
+    }
+
+    a {
+      text-decoration: none;
     }
   }
 }

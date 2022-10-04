@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EventDetail /> should match EventDetail component to snapshot 1`] = `
+<div>
+  <section
+    class="event-detail-container"
+  >
+    <article
+      class="event-content-wrapper"
+    >
+      <h2
+        class="main-heading"
+      >
+        Birthday Bash
+      </h2>
+      <p
+        class="caption"
+      >
+        Hosted by 
+        <strong>
+          Elysia
+        </strong>
+      </p>
+    </article>
+    <section
+      class="events-list-wrapper"
+    >
+      <article
+        class="events-list-container"
+      >
+        <figure
+          class="icon-tile"
+        >
+          <img
+            alt="event icon"
+            class="icon"
+            src="/images/event-page/calendar.png"
+          />
+        </figure>
+        <article
+          class="event-details"
+        >
+          <h6
+            class="detail-heading"
+          >
+            18 August 6:00PM
+          </h6>
+          <p
+            class="detail-subtext"
+          >
+            <span>
+              to 
+              <strong>
+                19 August 1:00PM
+              </strong>
+               
+              UTC +10
+            </span>
+          </p>
+        </article>
+        <figure
+          class="proceed-next"
+        >
+          <svg
+            fill="none"
+            height="16"
+            viewBox="0 0 9 16"
+            width="9"
+          >
+            <path
+              d="M1 1L8 8L1 15"
+              stroke="#BDBDBD"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            />
+          </svg>
+        </figure>
+      </article>
+      <article
+        class="events-list-container"
+      >
+        <figure
+          class="icon-tile"
+        >
+          <img
+            alt="event icon"
+            class="icon"
+            src="/images/event-page/location.png"
+          />
+        </figure>
+        <article
+          class="event-details"
+        >
+          <h6
+            class="detail-heading"
+          >
+            Street name
+          </h6>
+          <p
+            class="detail-subtext"
+          >
+            Suburb, State, Postcode
+          </p>
+        </article>
+        <figure
+          class="proceed-next"
+        >
+          <svg
+            fill="none"
+            height="16"
+            viewBox="0 0 9 16"
+            width="9"
+          >
+            <path
+              d="M1 1L8 8L1 15"
+              stroke="#BDBDBD"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            />
+          </svg>
+        </figure>
+      </article>
+    </section>
+  </section>
+</div>
+`;

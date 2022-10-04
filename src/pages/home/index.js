@@ -16,10 +16,10 @@ const Home = () => {
       <article className="home-content-wrapper">
         <MainHeading />
 
-        <h2 className="main-subheading">
+        <h3 className="main-subheading">
           Easily host and share events with your friends across any social
           media.
-        </h2>
+        </h3>
       </article>
 
       <CommonButton label="🎉 Create my event" />

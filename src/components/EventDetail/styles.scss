@@ -1,0 +1,73 @@
+@import "../../styles/commons.scss";
+
+.event-detail-container {
+  padding: 1rem 2rem;
+
+  @media (min-width: $mobile-screen) {
+    padding: 0;
+  }
+
+  .event-content-wrapper {
+    margin-bottom: 3rem;
+
+    @media (min-width: $mobile-screen) {
+      margin-bottom: 6.5rem;
+    }
+
+    .main-heading {
+      color: $primary-color;
+      margin-bottom: 0.5rem;
+    }
+
+    .caption {
+      color: $dark-gray-text;
+    }
+  }
+
+  .events-list-wrapper {
+    @include gridView(1fr, 0, 1.5rem);
+
+    .events-list-container {
+      @include flexView(center);
+
+      .icon-tile {
+        @include flexView(center, center);
+        @include boxShadow(0 0 0.5rem $primary-shadow);
+
+        width: 4.8rem;
+        height: 4.8rem;
+        background: $white-color;
+        border-radius: 1rem;
+        margin-right: 2rem;
+
+        @media (min-width: $mobile-screen) {
+          width: 5.6rem;
+          height: 5.6rem;
+        }
+
+        .icon {
+          width: 1.9rem;
+          height: 1.9rem;
+
+          @media (min-width: $mobile-screen) {
+            width: 2.6rem;
+            height: 2.6rem;
+          }
+        }
+      }
+    }
+
+    .event-details {
+      flex: 1;
+
+      .detail-heading {
+        color: $primary-color;
+        margin-bottom: 0.4rem;
+      }
+
+      .detail-subtext {
+        color: $dark-text;
+      }
+    }
+  }
+}
